@@ -1,48 +1,30 @@
-.container{
-    
-    display: inline-block;
-    
+.header{
+    background-color: white;
     width: 100%;
-    height: 300px;
-    background-color: beige;
-    border-radius: 15px;
-
+    
+    display: flex;
+    flex-direction: row;
+    border-radius: 10px;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    
 }
-@media (max-width:500px) {
-    #box1{
-        height: 400px;
-        max-width: 100%;
-        margin: auto;
-        
-        
-        
 
-    }  
-    
-    
-    
-    #box-image img{
-        display: absolute;
-        width: 150px;
-        height: 150px;
-        left:50px;
-        top: 300px;
-
-    }
-}
 .left{
-    position: absolute;
-    display: flexbox;
-    width: 50%;
-    margin-left: 50px;
+    
+    margin-left: 0px;
+}
+.right{
+    margin-right: 0px;
 }
 span{
     position: relative;
     top:auto;
     font-family: 'Montserrat', sans-serif;
     font-size: 40px;
-    font-weight: bold;
-    color: brown;
+    font-weight:bolder;
+    color: rgb(18, 2, 88);
     height: 100%;
     
 }
@@ -52,7 +34,7 @@ ul{
 li{
     display: inline-block;
     padding: 5px;
-    list-style-type: circle;
+    list-style-type: none;
     text-decoration: solid;
     font-size: 20px;
     color: blueviolet;
@@ -67,17 +49,51 @@ li{
     width: 70%;
     
 }
-.right{
-    display: flexbox;
-    float: right;
-    width: 50%;
-}
+
 
 .right img {
-    position: absolute;
-    top: 20px;
-    right:50px;
+    
+
+    
+    
     width: 200px;
-    height: 250px;
-    border-radius: 100px;
+    height: 200px;
+    border-radius: 20px;
+}
+@media (max-width:500px) {
+    #box1{
+        display: flex;
+        flex-direction: column;
+        align-items: normal;
+        
+
+    }
+
+
+    #box-left{
+        width: 100%;
+        margin-left: 10px;
+        
+    }
+    #box-image{
+        margin-right: 0px;
+        
+    }
+
+    
+    
+    
+    #box-image img{
+        
+        object-fit: cover ;
+        width: 100px;
+        height: 250px;
+        right: 50px;
+        top: 300px;
+        width: 100%;
+        border-radius: 0px;
+        margin-right: 5px;
+        
+
+    }
 }
